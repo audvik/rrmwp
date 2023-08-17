@@ -1,6 +1,6 @@
-input.css
-package.json
-yarn.lock
-styles.css
-tailwind.config.js
+/input.css
+/package.json
+/yarn.lock
+/styles.css
+/tailwind.config.js
 node_modules
