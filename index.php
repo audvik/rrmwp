@@ -102,7 +102,7 @@
             <div class="container md:w-1/2 order-1 md:order-2 h-2/3">
                 <img
                     class=""
-                    src="<?php get_template_directory_uri();?>/img/illustration-intro.svg"
+                    src="<?php echo get_template_directory_uri();?>/img/illustration-intro.svg"
                     alt=""
                     srcset=""
                 />
@@ -260,7 +260,7 @@
                 >
                     <img
                         class="w-16 h-16 -mt-14"
-                        src="<?php get_template_directory_uri();?>/img/avatar-richard.png"
+                        src="<?php echo get_template_directory_uri();?>/img/avatar-richard.png"
                         alt="Richard Mathew"
                     />
                     <h5 class="text-lg font-bold">User 4</h5>
