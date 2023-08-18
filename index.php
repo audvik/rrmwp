@@ -1,405 +1,478 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>RRM Students Club</title>
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/styles.css" />
-    </head>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coble - HR Template Landing Page</title>
 
-    <body>
-        <!-- Nav Bar -->
-        <nav class="relative container mx-auto p-6">
-            <div class="flex items-center justify-between">
-                <div class="pt-2">
-                    <img src="<?php echo get_template_directory_uri();?>/img/logo.svg" alt="MainLogo" />
-                </div>
-                <div class="">
-                    <ul class="space-x-6">
-                        <li class="hidden md:inline">
-                            <a href="#" class="hover:text-darkGrayishBlue"
-                                >Pricing</a
-                            >
-                        </li>
-                        <li class="hidden md:inline">
-                            <a href="#" class="hover:text-darkGrayishBlue"
-                                >Product</a
-                            >
-                        </li>
-                        <li class="hidden md:inline">
-                            <a href="#" class="hover:text-darkGrayishBlue"
-                                >About Us</a
-                            >
-                        </li>
-                        <li class="hidden md:inline">
-                            <a href="#" class="hover:text-darkGrayishBlue"
-                                >Careers</a
-                            >
-                        </li>
-                        <li class="hidden md:inline">
-                            <a href="#" class="hover:text-darkGrayishBlue"
-                                >Community</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <a
-                        href="#"
-                        class="hidden text-white bg-brightRed pt-2 px-6 pb-3 md:block rounded-full hover:bg-brightRedLight"
-                        >Get Started</a
-                    >
-                </div>
-                <button
-                    id="menu-btn"
-                    class="block hamburger md:hidden focus:outline-none"
-                >
-                    <span class="hamburger-top"></span>
-                    <span class="hamburger-middle"></span>
-                    <span class="hamburger-bottom"></span>
-                </button>
-                <div class="md:hidden">
-                    <div
-                        id="menu"
-                        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-                    >
-                        <a href="#">Pricing</a>
-                        <a href="#">Product</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Careers</a>
-                        <a href="#">Community</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- Hero Section -->
-        <section
-            id="hero"
-            class="container flex flex-col mx-auto p-6 md:flex-row items-center"
+    <!-- ===== FAVICON ===== -->
+    <link
+      rel="shortcut icon"
+      href="<?php echo get_template_directory_uri();?>/assets/favicon.f698f2fd.svg"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri();?>/assets/favicon.f698f2fd.svg" />
+
+    <!-- ===== BOXICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== SWIPER CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script type="module" crossorigin src="<?php echo get_template_directory_uri();?>/assets/index.596ab601.js"></script>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/index.469dc5c5.css">
+  </head>
+  <body class="font-text font-reguler">
+    <!-- ===== HEADER SECTION ===== -->
+    <header
+      class="header fixed w-full top-0 left-0 bg-white z-50 transition-all duration-400"
+      id="header"
+    >
+      <div
+        class="header__container container h-24 flex justify-between items-center"
+      >
+        <a
+          href="#"
+          class="header__logo text-[20px] text-black font-title font-bold"
+          >Coble.</a
         >
-            <div
-                class="container md:w-1/2 flex flex-col order-2 md:order-1 mb-16 md:mb-32 justify-evenly"
+
+        <div class="header__menu" id="header-menu">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Platform</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Company</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Pricing</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Our Market</a>
+            </li>
+          </ul>
+
+          <a href="#" class="header__button button mt-6">Get Started</a>
+        </div>
+
+        <div
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          id="header-toggle"
+        >
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </header>
+    <!-- ===== HEADER SECTION ===== -->
+
+    <main class="main overflow-hidden">
+      <!-- ===== HOME SECTION ===== -->
+      <section class="home section">
+        <div class="home__container container grid gap-12">
+          <div class="home__data text-center justify-self-center">
+            <h1 class="home__title section-title">
+              Work With The Best Marketers For Your Business
+            </h1>
+            <p class="home__text section-text mb-8">
+              World-class marketing freelancers and micro agencies, vetted based
+              on proven results, not sales pitches. The challenge of assessing
+              marketers.
+            </p>
+            <div class="home__buttons flex flex-col gap-4 mb-4">
+              <a href="#" class="home__buttons-started button">Get Started</a>
+              <a
+                href="#"
+                class="home__buttons-talk button bg-white border-2 border-solid border-[#00aaff] text-black"
+                >Let's Talk</a
+              >
+            </div>
+            <p class="home__tag text-sm text-grey">
+              A platform for hiring on-demand marketing talent
+            </p>
+          </div>
+
+          <img
+            src="<?php echo get_template_directory_uri();?>/assets/home-img.e96b0118.svg"
+            alt=""
+            class="home__img drop-shadow-xl text-center justify-self-center"
+          />
+        </div>
+      </section>
+      <!-- ===== HOME SECTION ===== -->
+
+      <!-- ===== PARTNER SECTION ===== -->
+      <section class="partner py-16">
+        <div class="partner__container container grid gap-12">
+          <div class="partner__data text-center justify-self-center">
+            <p
+              class="partner__text text-[18px] text-black font-semibold leading-text"
             >
-                <h1
-                    class="max-w-md text-4xl md:text-5xl font-extrabold text-center md:text-left mb-12"
-                >
-                    RRM Campus IT Students Group
+              Trusted by forward-thinking companies who value ease of use over
+              complexity:
+            </p>
+          </div>
+
+          <div
+            class="partner__group grid grid-cols-[repeat(2,max-content)] justify-center gap-y-14 gap-x-10"
+          >
+            <img
+              src="<?php echo get_template_directory_uri();?>/assets/partner-logo-(1).808b8e92.png"
+              alt=""
+              class="partner__img w-[120px] invert-[0.7]"
+            />
+            <img
+              src="<?php echo get_template_directory_uri();?>/assets/partner-logo-(2).0293bb77.png"
+              alt=""
+              class="partner__img w-[120px] invert-[0.7]"
+            />
+            <img
+              src="<?php echo get_template_directory_uri();?>/assets/partner-logo-(3).494f1808.png"
+              alt=""
+              class="partner__img w-[120px] invert-[0.7]"
+            />
+            <img
+              src="<?php echo get_template_directory_uri();?>/assets/partner-logo-(4).f7ac08c7.png"
+              alt=""
+              class="partner__img w-[120px] invert-[0.7]"
+            />
+            <img
+              src="<?php echo get_template_directory_uri();?>/assets/partner-logo-(5).a7722f1e.png"
+              alt=""
+              class="partner__img w-[120px] invert-[0.7]"
+            />
+            <img
+              src="<?php echo get_template_directory_uri();?>/assets/partner-logo-(6).813a8dc6.png"
+              alt=""
+              class="partner__img w-[120px] invert-[0.7]"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- ===== PARTNER SECTION ===== -->
+
+      <!-- ===== CHALLENGE SECTION ===== -->
+      <section class="challenge section">
+        <div class="challenge__bg py-16 bg-[#010510]">
+          <div class="challenge__container container grid gap-12">
+            <div class="challenge__data text-center justify-self-center">
+              <p class="challenge__subtitle section-subtitle text-white">
+                The Challenge
+              </p>
+              <h1 class="challenge__title section-title text-white">
+                Skip the big promises Hire marketing experts based on data
+              </h1>
+              <p class="challenge__text section-text text-white mb-8">
+                The challenge of assessing marketers skills is real. With Coble
+                you don't need to rely on reviews and fancy sales pitches. Lorem
+                ipsum dolor sit amet consectetur adipisicing.
+              </p>
+              <a href="#" class="challenge__button button bg-white text-black"
+                >Get Started</a
+              >
+            </div>
+
+            <img
+              src="<?php echo get_template_directory_uri();?>/assets/challenge-img.ae76b451.svg"
+              alt=""
+              class="challenge__img drop-shadow-xl text-center justify-self-center"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- ===== CHALLENGE SECTION ===== -->
+
+      <!-- ===== SERVICES SECTION ===== -->
+      <section class="services section">
+        <div class="services__container container">
+          <div class="services__group grid gap-28">
+            <div class="services__content">
+              <div class="services__content-data">
+                <h1 class="services__content-title section-title">
+                  Leading businesses expand their marketing teams with Coble
                 </h1>
-                <p
-                    class="max-w-sm text-darkGrayishBlue text-center md:text-left mb-12"
-                >
-                    RRM Students Club makes it simple for software teams to plan day-to-day
-                    tasks while keeping the larger team goals in view.
+                <p class="services__content-text section-text mb-8">
+                  Our AI will tap into our 600+ global network of exhaustively
+                  vetted experts to identify the perfect match to seamlessly
+                  integrate ipsum dolor consectetur adipisicing.
                 </p>
-                <div class="flex justify-center md:justify-start">
-                    <a
-                        href="#"
-                        class="text-white bg-brightRed pt-2 pb-3 px-6 text-center rounded-full"
-                        >Get Started</a
-                    >
-                </div>
+                <a href="#" class="services__content-button button gap-2">
+                  Learn More
+                  <i class="bx bx-right-arrow-alt inline-flex text-base"></i>
+                </a>
+              </div>
+
+              <img
+                src="<?php echo get_template_directory_uri();?>/assets/services-img-(1).ece9517a.svg"
+                alt=""
+                class="services__content-img"
+              />
             </div>
-            <div class="container md:w-1/2 order-1 md:order-2 h-2/3">
-                <img
-                    class=""
-                    src="<?php echo get_template_directory_uri();?>/img/illustration-intro.svg"
+
+            <div class="services__content">
+              <div class="services__content-data">
+                <h1 class="services__content-title section-title">
+                  Only the marketers who have achieved above-benchmark results
+                </h1>
+                <p class="services__content-text section-text mb-8">
+                  We actually look into our experts accounts with view-only
+                  access or screen-sharing, to see with our own eyes that they
+                  are as good as they say they are.
+                </p>
+                <a href="#" class="services__content-button button gap-2">
+                  Learn More
+                  <i class="bx bx-right-arrow-alt inline-flex text-base"></i>
+                </a>
+              </div>
+
+              <img
+                src="<?php echo get_template_directory_uri();?>/assets/services-img-(2).07be5639.svg"
+                alt=""
+                class="services__content-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== SERVICES SECTION ===== -->
+
+      <!-- ===== TESTIMONIAL SECTION ===== -->
+      <section class="testimonial section">
+        <div
+          class="testimonial__data container text-center justify-self-center"
+        >
+          <h1 class="testimonial__title section-title">
+            How Do We Vet The Top
+          </h1>
+          <p class="testimonial__text section-text">
+            Is creating contracts in Word and exchanging PDFs via email the best
+            way sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div class="testimonial__container container">
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper py-12">
+              <div class="testimonial__content swiper-slide">
+                <p class="testimonial__content-comment">
+                  “Coble's matching process takes into account so many variables
+                  that I wouldn't even have thought of when trying to hire a
+                  marketing agency. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit."
+                </p>
+
+                <div class="testimonial__content-profile">
+                  <img
+                    src="<?php echo get_template_directory_uri();?>/assets/testimonial-profile-(1).e32a1bb1.svg"
                     alt=""
-                    srcset=""
-                />
-            </div>
-        </section>
-        <section
-            id="features"
-            class="container flex flex-col md:flex-row mx-auto p-6"
-        >
-            <div class="container flex flex-col md:w-1/2">
-                <h2
-                    class="font-bold max-w-md text-center md:text-left text-3xl md:text-4xl"
-                >
-                    What's different about RRM Students Club?
-                </h2>
-                <p
-                    class="max-w-sm text-darkGrayishBlue text-center md:text-left mt-12"
-                >
-                    RRM Students Club provides all the functionality your team needs,
-                    without the complexity. Our software is tailor-made for
-                    modern digital product teams.
+                    class="testimonial__content-img"
+                  />
+
+                  <div>
+                    <h3 class="testimonial__content-name">Fajar Fadillah A</h3>
+                    <p class="testimonial__content-profession">
+                      Frontend Developer
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial__content swiper-slide">
+                <p class="testimonial__content-comment">
+                  “Coble's matching process takes into account so many variables
+                  that I wouldn't even have thought of when trying to hire a
+                  marketing agency. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit."
                 </p>
-            </div>
-            <div
-                class="container md:w-1/2 flex flex-col justify-center text-center md:text-left"
-            >
-                <div
-                    class="flex flex-col md:flex-row space-x-6 justify-start mt-8 md:m-0"
-                >
-                    <div
-                        class="flex items-center text-center md:text-start justify-start md:items-start space-x-2 md:space-x-0 mb-4 mx-auto bg-veryPaleRed md:bg-white"
-                    >
-                        <span
-                            class="bg-brightRed text-white px-4 py-2 md:py-1 rounded-full"
-                        >
-                            01
-                        </span>
-                        <h3 class="inline-block md:hidden text-lg font-bold">
-                            Track company-wide progress
-                        </h3>
-                    </div>
-                    <div>
-                        <h3 class="hidden md:block text-lg font-bold mb-4">
-                            Track company-wide progress
-                        </h3>
-                        <p class="text-darkGrayishBlue leading-5 tracking-wide">
-                            See how your day-to-day tasks fit into the wider
-                            vision. Go from tracking progress at the milestone
-                            level all the way down to the smallest of details.
-                            Never lose sight of the bigger picture again.
-                        </p>
-                    </div>
-                </div>
-                <div
-                    id="features-right-col-point-2"
-                    class="flex flex-col md:flex-row space-x-6 justify-start mt-8"
-                >
-                    <div
-                        class="flex items-center text-center md:text-start justify-start md:items-start space-x-2 md:space-x-0 mb-4 mx-auto bg-veryPaleRed md:bg-white"
-                    >
-                        <span
-                            class="bg-brightRed text-white px-4 py-2 md:py-1 rounded-full"
-                        >
-                            02
-                        </span>
-                        <h3 class="inline-block md:hidden text-lg font-bold">
-                            Advanced built-in reports
-                        </h3>
-                    </div>
-                    <div>
-                        <h3 class="hidden md:block text-lg font-bold mb-4">
-                            Advanced built-in reports
-                        </h3>
-                        <p class="text-darkGrayishBlue leading-5 tracking-wide">
-                            Set internal delivery estimates and track progress
-                            toward company goals. Our customisable dashboard
-                            helps you build out the reports you need to keep key
-                            stakeholders informed.
-                        </p>
-                    </div>
-                </div>
-                <div
-                    id="features-right-col-point-1"
-                    class="flex flex-col md:flex-row space-x-6 justify-start mt-8"
-                >
-                    <div
-                        class="flex items-center text-center md:text-start justify-start md:items-start space-x-2 md:space-x-0 mb-4 mx-auto bg-veryPaleRed md:bg-white"
-                    >
-                        <span
-                            class="bg-brightRed text-white px-4 py-2 md:py-1 rounded-full"
-                        >
-                            03
-                        </span>
-                        <h3 class="inline-block md:hidden text-lg font-bold">
-                            Everything you need in one place
-                        </h3>
-                    </div>
-                    <div>
-                        <h3 class="hidden md:block text-lg font-bold mb-4">
-                            Everything you need in one place
-                        </h3>
-                        <p class="text-darkGrayishBlue leading-5 tracking-wide">
-                            Stop jumping from one service to another to
-                            communicate, store files, track tasks and share
-                            documents. RRM Students Club offers an all-in-one team
-                            productivity solution.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Testimonial Section -->
-        <section
-            id="testimonial"
-            class="container mt-16 md:mt-32 flex flex-col mx-auto p-6 max-w-6xl px-5 text-center"
-        >
-            <div>
-                <h2 class="text-4xl font-bold">
-                    What's different about RRM Students Club?
-                </h2>
-            </div>
-            <div class="mt-8 md:mt-24 flex flex-col md:flex-row md:space-x-6">
-                <div
-                    class="md:w-1/3 flex flex-col items-center p-6 space-y-6 bg-veryLightGray"
-                >
-                    <img
-                        class="w-16 h-16 -mt-14"
-                        src="<?php echo get_template_directory_uri();?>/img/avatar-anisha.png"
-                        alt="Anisha Li"
-                    />
-                    <h5 class="text-lg font-bold">User 2</h5>
-                    <p class="text-darkGrayishBlue">
-                        “RRM Students Club has supercharged our team's workflow. The
-                        ability to maintain visibility on larger milestones at
-                        all times keeps everyone motivated.”
+
+                <div class="testimonial__content-profile">
+                  <img
+                    src="<?php echo get_template_directory_uri();?>/assets/testimonial-profile-(2).a8d91abd.svg"
+                    alt=""
+                    class="testimonial__content-img"
+                  />
+
+                  <div>
+                    <h3 class="testimonial__content-name">Khabib Van Dijk</h3>
+                    <p class="testimonial__content-profession">
+                      Software Engineer
                     </p>
+                  </div>
                 </div>
-                <div
-                    class="hidden md:w-1/3 md:flex md:flex-col items-center p-6 space-y-6 bg-veryLightGray"
-                >
-                    <img
-                        class="w-16 h-16 -mt-14"
-                        src="<?php echo get_template_directory_uri();?>/img/avatar-ali.png"
-                        alt="Ali Bravo"
-                    />
-                    <h5 class="text-lg font-bold">User 3</h5>
-                    <p class="text-darkGrayishBlue">
-                        “We have been able to cancel so many other subscriptions
-                        since using RRM Students Club. There is no more cross-channel
-                        confusion and everyone is much more focused.”
+              </div>
+
+              <div class="testimonial__content swiper-slide">
+                <p class="testimonial__content-comment">
+                  “Coble's matching process takes into account so many variables
+                  that I wouldn't even have thought of when trying to hire a
+                  marketing agency. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit."
+                </p>
+
+                <div class="testimonial__content-profile">
+                  <img
+                    src="<?php echo get_template_directory_uri();?>/assets/testimonial-profile-(3).04223241.svg"
+                    alt=""
+                    class="testimonial__content-img"
+                  />
+
+                  <div>
+                    <h3 class="testimonial__content-name">Sonia Verhoeven</h3>
+                    <p class="testimonial__content-profession">
+                      UI/UX Designer
                     </p>
+                  </div>
                 </div>
-                <div
-                    class="hidden md:w-1/3 md:flex md:flex-col items-center p-6 space-y-6 bg-veryLightGray"
-                >
-                    <img
-                        class="w-16 h-16 -mt-14"
-                        src="<?php echo get_template_directory_uri();?>/img/avatar-richard.png"
-                        alt="Richard Mathew"
-                    />
-                    <h5 class="text-lg font-bold">User 4</h5>
-                    <p class="text-darkGrayishBlue">
-                        “RRM Students Club has supercharged our team's workflow. The
-                        ability to maintain visibility on larger milestones at
-                        all times keeps everyone motivated.”
-                    </p>
-                </div>
+              </div>
             </div>
-            <div class="md:my-16">
+
+            <!-- swiper-pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== TESTIMONIAL SECTION ===== -->
+
+      <!-- ===== CONTACT SECTION ===== -->
+      <section class="contact section">
+        <div class="contact__bg py-16 bg-[#155aff]">
+          <div class="contact__container container grid">
+            <div class="contact__data text-center justify-self-center">
+              <h1 class="contact__title section-title text-white">
+                Grow Your Business with Coble
+              </h1>
+              <p class="contact__text section-text text-white mb-8">
+                No payment required until you approve your expert Lorem ipsum
+                dolor sit amet consectetur adipisicing elit possimus aperiam.
+              </p>
+              <div class="contact__buttons flex flex-col gap-4 mb-4">
+                <a href="#" class="contact__buttons-started button"
+                  >Get Started</a
+                >
                 <a
-                    href="#"
-                    class="text-white bg-brightRed pt-2 px-6 pb-3 rounded-full hover:bg-brightRedLight"
-                    >Get Started</a
+                  href="#"
+                  class="contact__buttons-talk button bg-transparent border-2 border-solid border-white text-white"
+                  >Let's Talk</a
                 >
+              </div>
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <i class="bx bx-check contact__item-check"></i>
+                  No credit card required
+                </li>
+                <li class="contact__item">
+                  <i class="bx bx-check contact__item-check"></i>
+                  No credit card required
+                </li>
+              </ul>
             </div>
-        </section>
-        <!-- CTA Section -->
-        <section id="cta" class="bg-brightRed">
-            <div
-                class="container flex flex-col md:flex-row text-center md:text-left mx-auto px-6 py-24 items-center justify-between space-y-12 md:space-y-0 md:py-12"
+          </div>
+        </div>
+      </section>
+      <!-- ===== CONTACT SECTION ===== -->
+    </main>
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer class="footer pt-32 pb-8">
+      <div class="footer__container container grid gap-24">
+        <div
+          class="footer__group grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-12"
+        >
+          <div class="footer__data">
+            <a
+              href="#"
+              class="footer__data-logo text-[20px] text-black font-title font-bold"
+              >Coble.</a
             >
-                <h2
-                    class="text-5xl md:text-4xl md:max-w-xl text-white font-bold"
-                >
-                    Simplify how your team works today
-                </h2>
-                <div class="">
-                    <a
-                        href="#"
-                        class="text-brightRed bg-white pt-2 px-6 pb-3 rounded-full hover:bg-black"
-                        >Get Started</a
-                    >
-                </div>
-            </div>
-        </section>
-        <!-- Footer Section -->
-        <footer class="bg-veryDarkBlue">
-            <div
-                class="container flex flex-col-reverse text-white text-center px-6 py-10 space-y-8 mx-auto md:flex-row md:space-y-0 justify-between"
+            <p
+              class="footer__data-text text-[15px] text-grey leading-text mt-4"
             >
-                <div
-                    class="flex flex-col-reverse justify-around space-y-12 items-center md:space-y-0 md:flex-col md:items-start"
-                >
-                    <div class="mx-auto my-6 md:hidden">
-                        Copyright © 2023, All Rights Reserved
-                    </div>
-                    <div class="mt-12">
-                        <img src="<?php echo get_template_directory_uri();?>/img/logo-white.svg" class="h-8" alt="" />
-                    </div>
-                    <div class="flex justify-center space-x-4">
-                        <img
-                            src="<?php echo get_template_directory_uri();?>/img/icon-facebook.svg"
-                            class="h-8"
-                            alt=""
-                        /><img
-                            src="<?php echo get_template_directory_uri();?>/img/icon-youtube.svg"
-                            class="h-8"
-                            alt=""
-                        /><img
-                            src="<?php echo get_template_directory_uri();?>/img/icon-twitter.svg"
-                            class="h-8"
-                            alt=""
-                        /><img
-                            src="<?php echo get_template_directory_uri();?>/img/icon-pinterest.svg"
-                            class="h-8"
-                            alt=""
-                        /><img
-                            src="<?php echo get_template_directory_uri();?>/img/icon-instagram.svg"
-                            class="h-8"
-                            alt=""
-                        />
-                    </div>
-                </div>
-                <div class="flex justify-around space-x-32 mt-8">
-                    <div class="text-left">
-                        <ul>
-                            <li>
-                                <a href="#" class="hover:text-brightRed"
-                                    >Home</a
-                                >
-                            </li>
-                            <li class="mt-3">
-                                <a href="#" class="hover:text-brightRed"
-                                    >Pricing</a
-                                >
-                            </li>
-                            <li class="mt-3">
-                                <a href="#" class="hover:text-brightRed"
-                                    >Products</a
-                                >
-                            </li>
-                            <li class="mt-3">
-                                <a href="#" class="hover:text-brightRed"
-                                    >About</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="text-left">
-                        <ul>
-                            <li>
-                                <a href="#" class="hover:text-brightRed"
-                                    >Careers</a
-                                >
-                            </li>
-                            <li class="mt-3">
-                                <a href="#" class="hover:text-brightRed"
-                                    >Community</a
-                                >
-                            </li>
-                            <li class="mt-3">
-                                <a href="#" class="hover:text-brightRed"
-                                    >Privacy Policy</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flex flex-col justify-between">
-                    <div class="flex space-x-3">
-                        <input
-                            type="email"
-                            class="text-black flex-1 px-4 rounded-full focus:outline-none"
-                            placeholder="Update your mailbox"
-                        />
-                        <button
-                            class="bg-brightRed text-center text-white rounded-full px-6 py-2 hover:bg-brightRedLight focus:outline-none"
-                        >
-                            Go
-                        </button>
-                    </div>
-                    <div class="hidden md:block mx-auto my-6">
-                        Copyright © 2023, All Rights Reserved
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="<?php echo get_template_directory_uri();?>/js/script.js"></script>
-    </body>
+              15 West 38 Street MB <br />
+              New York, NY, US. <br />
+              Giv'atayim, Israel.
+            </p>
+          </div>
+
+          <div class="footer__content">
+            <h3 class="footer__content-title">Product</h3>
+
+            <ul class="footer__content-list">
+              <li><a href="#" class="footer__content-link">Platform</a></li>
+              <li><a href="#" class="footer__content-link">Overview</a></li>
+              <li><a href="#" class="footer__content-link">Database</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__content">
+            <h3 class="footer__content-title">Company</h3>
+
+            <ul class="footer__content-list">
+              <li><a href="#" class="footer__content-link">vs Agencies</a></li>
+              <li><a href="#" class="footer__content-link">vs In-house</a></li>
+              <li>
+                <a href="#" class="footer__content-link">vs Freelancers</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__content">
+            <h3 class="footer__content-title">Pricing</h3>
+
+            <ul class="footer__content-list">
+              <li>
+                <a href="#" class="footer__content-link">Paid advertising</a>
+              </li>
+              <li>
+                <a href="#" class="footer__content-link">Email marketing</a>
+              </li>
+              <li><a href="#" class="footer__content-link">SEO</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__content">
+            <h3 class="footer__content-title">Legal</h3>
+
+            <ul class="footer__content-list">
+              <li><a href="#" class="footer__content-link">Privacy</a></li>
+              <li><a href="#" class="footer__content-link">Legal notice</a></li>
+              <li><a href="#" class="footer__content-link">Terms of use</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <p
+          class="footer__copy pt-8 border-t-2 border-solid border-grey border-opacity-20 text-[15px] text-grey text-center leading-text"
+        >
+          &copy; Copyrights 2022, all rights reserved - Develop by Fajar
+          Fadillah A 😎
+        </p>
+      </div>
+    </footer>
+    <!-- ===== FOOTER SECTION ===== -->
+
+    <!-- ===== SCROLLUP SECTION ===== -->
+    <a
+      href="#"
+      class="scrollup fixed right-6 -bottom-full w-11 h-11 inline-flex justify-center items-center p-4 bg-[#155aff] rounded-lg text-[1.5rem] text-white transition-all duration-400 z-10 hover:bg-black"
+      id="scroll-up"
+    >
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
+    <!-- ===== SCROLLUP SECTION ===== -->
+
+    <!-- ===== SWIPER JS ===== -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- ===== MAIN JS ===== -->
+    
+  </body>
 </html>
