@@ -27,6 +27,7 @@
     />
     <script type="module" crossorigin src="<?php echo get_template_directory_uri();?>/assets/index.596ab601.js"></script>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/index.469dc5c5.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
   </head>
   <body class="font-text font-reguler">
     <!-- ===== HEADER SECTION ===== -->
@@ -100,7 +101,107 @@
               A platform for hiring on-demand marketing talent
             </p>
           </div>
-
+          <div class="face-grid">
+              <div class="face-wrap">
+                <div class="face bordered bordered-fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/1.jpg" alt="">
+                </div>
+              </div>
+              <div class="face-wrap">
+                <div class="face accent-fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face bordered bordered-fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/2.jpg" alt="">
+                </div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face accent-fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/3.jpeg" alt="">
+                </div>
+              </div>
+              <div class="face-wrap">
+                <div class="face bordered bordered-fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/4.jpg" alt="">
+                </div>
+              </div>
+              <div class="face-wrap">
+                <div class="face bordered bordered-fade-2 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/13.jpg" alt="">
+                </div>
+              </div>
+              <div class="face-wrap">
+                <div class="face bordered bordered-fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/19.jpg" alt="">
+                </div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/7.jpg" alt="">
+                </div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face bordered bordered-fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/22.jpg" alt="">
+                </div>
+              </div>
+              <div class="face-wrap">
+                <div class="face accent-fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face bordered bordered-fade-1 faded-dark"></div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/14.jpg" alt="">
+                </div>
+              </div>
+              <div class="face-wrap">
+                <div class="face fade-1 faded-dark"></div>
+              </div>
+            </div>
           <img
             src="<?php echo get_template_directory_uri();?>/assets/home-img.e96b0118.svg"
             alt=""

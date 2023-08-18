@@ -6,3 +6,70 @@ Author URI: https://rrmcampus.com
 Description: RRM Campus wordpress theme
 Version: 1.0
 */
+:root {
+    --main-bg-color: coral;
+  }
+  
+.face-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0 0 0;
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.face-grid .face-wrap {
+    flex: 1 1 0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+}
+.face-grid .face-wrap .face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-light-30);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.face-grid .face-wrap .face.bordered {
+    background: var(--wrap-bg-color);
+    border: 10px solid var(--primary);
+}
+.face-grid .face-wrap .face.bordered.bordered-fade-1 {
+    border-color: var(--primary-light-40);
+}
+.face-grid .face-wrap .face.bordered.bordered-fade-2 {
+    border-color: var(--primary-light-30);
+}
+.face-grid .face-wrap .face.fade-1 {
+    background: var(--primary-light-40);
+}
+.face-grid .face-wrap .face.accent-fade-1 {
+    background: var(--accent-light-22);
+}
+.face-grid .face-wrap .face img {
+    display: block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 767px) {
+    .face-grid .face-wrap .face {
+        height: 40px;
+        width: 40px;
+   }
+    .face-grid .face-wrap .face.bordered {
+        border-width: 5px;
+   }
+    .face-grid .face-wrap .face img {
+        height: 40px;
+        width: 40px;
+   }
+}
+.face-grid .face-wrap .face.accent-fade-1 {
+    background: var(--accent-light-22);
+}
