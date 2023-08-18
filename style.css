@@ -9,7 +9,7 @@ Version: 1.0
 :root {
     --main-bg-color: coral;
   }
-  
+
 .face-grid {
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +29,7 @@ Version: 1.0
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--primary-light-30);
+    background: var(--main-bg-color);
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -37,10 +37,10 @@ Version: 1.0
 }
 .face-grid .face-wrap .face.bordered {
     background: var(--wrap-bg-color);
-    border: 10px solid var(--primary);
+    border: 10px solid var(--main-bg-color);
 }
 .face-grid .face-wrap .face.bordered.bordered-fade-1 {
-    border-color: var(--primary-light-40);
+    border-color: var(--main-bg-color);
 }
 .face-grid .face-wrap .face.bordered.bordered-fade-2 {
     border-color: var(--primary-light-30);
