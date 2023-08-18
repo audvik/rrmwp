@@ -9,6 +9,10 @@ Version: 1.0
 :root {
     --main-bg-color: coral;
   }
+  
+.bg-coral {
+    background-color: var(--main-bg-color);
+}
 
 .face-grid {
     display: flex;
@@ -43,13 +47,13 @@ Version: 1.0
     border-color: var(--main-bg-color);
 }
 .face-grid .face-wrap .face.bordered.bordered-fade-2 {
-    border-color: var(--primary-light-30);
+    border-color: var(--main-bg-color);
 }
 .face-grid .face-wrap .face.fade-1 {
-    background: var(--primary-light-40);
+    background: var(--main-bg-color);
 }
 .face-grid .face-wrap .face.accent-fade-1 {
-    background: var(--accent-light-22);
+    background: var(--main-bg-color);
 }
 .face-grid .face-wrap .face img {
     display: block;
@@ -71,5 +75,5 @@ Version: 1.0
    }
 }
 .face-grid .face-wrap .face.accent-fade-1 {
-    background: var(--accent-light-22);
+    background: var(--main-bg-color);
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coble - HR Template Landing Page</title>
+    <title>Janakpur IT Club</title>
 
     <!-- ===== FAVICON ===== -->
     <link
@@ -40,8 +40,8 @@
       >
         <a
           href="#"
-          class="header__logo text-[20px] text-black font-title font-bold"
-          >Coble.</a
+          class="header__logo text-[20px] bg-coral font-title font-bold"
+          >IT.Club</a
         >
 
         <div class="header__menu" id="header-menu">
@@ -50,16 +50,16 @@
               <a href="#" class="header__link">Home</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Platform</a>
+              <a href="#" class="header__link">Events</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Company</a>
+              <a href="#" class="header__link">Assignment</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Pricing</a>
+              <a href="#" class="header__link">Placement</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Our Market</a>
+              <a href="#" class="header__link">Research</a>
             </li>
           </ul>
 
@@ -82,12 +82,10 @@
         <div class="home__container container grid gap-12">
           <div class="home__data text-center justify-self-center">
             <h1 class="home__title section-title">
-              Work With The Best Marketers For Your Business
+              RRM Students' IT Club of Janakpur dham, Nepal
             </h1>
             <p class="home__text section-text mb-8">
-              World-class marketing freelancers and micro agencies, vetted based
-              on proven results, not sales pitches. The challenge of assessing
-              marketers.
+                Learning-by-doing project works and practical assignments to keep you busy for future IT career. Meet RRM graduates and know what skills will help you get hired !
             </p>
             <div class="home__buttons flex flex-col gap-4 mb-4">
               <a href="#" class="home__buttons-started button">Get Started</a>
@@ -98,7 +96,7 @@
               >
             </div>
             <p class="home__tag text-sm text-grey">
-              A platform for hiring on-demand marketing talent
+              Download live-projects from github @RRMcampus
             </p>
           </div>
           <div class="face-grid">
@@ -110,7 +108,7 @@
               </div>
               <div class="face-wrap">
                 <div class="face fade-1">
-                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/1.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatar-1.png" alt="">
                 </div>
               </div>
               <div class="face-wrap">
@@ -127,7 +125,7 @@
               </div>
               <div class="face-wrap">
                 <div class="face fade-1">
-                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/2.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatar-1.png" alt="">
                 </div>
               </div>
               <div class="face-wrap">
@@ -138,7 +136,7 @@
               </div>
               <div class="face-wrap">
                 <div class="face">
-                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/3.jpeg" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatar-1.png" alt="">
                 </div>
               </div>
               <div class="face-wrap">
@@ -146,7 +144,7 @@
               </div>
               <div class="face-wrap">
                 <div class="face fade-1">
-                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/4.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatar-1.png" alt="">
                 </div>
               </div>
               <div class="face-wrap">
@@ -157,7 +155,7 @@
               </div>
               <div class="face-wrap">
                 <div class="face fade-1">
-                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/13.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatar-1.png" alt="">
                 </div>
               </div>
               <div class="face-wrap">
@@ -165,12 +163,12 @@
               </div>
               <div class="face-wrap">
                 <div class="face fade-1">
-                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/19.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatar-1.png" alt="">
                 </div>
               </div>
               <div class="face-wrap">
                 <div class="face fade-1">
-                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/7.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatar-1.png" alt="">
                 </div>
               </div>
               <div class="face-wrap">
@@ -184,7 +182,7 @@
               </div>
               <div class="face-wrap">
                 <div class="face fade-1">
-                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/22.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatar-1.png" alt="">
                 </div>
               </div>
               <div class="face-wrap">
@@ -195,7 +193,7 @@
               </div>
               <div class="face-wrap">
                 <div class="face fade-1">
-                  <img src="<?php echo get_template_directory_uri();?>/img/avatars/14.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/img/avatar-1.png" alt="">
                 </div>
               </div>
               <div class="face-wrap">
@@ -445,8 +443,8 @@
 
       <!-- ===== CONTACT SECTION ===== -->
       <section class="contact section">
-        <div class="contact__bg py-16 bg-[#155aff]">
-          <div class="contact__container container grid">
+        <div class="contact__bg py-16 bg-coral">
+          <div class="contact__container bg-coral container grid">
             <div class="contact__data text-center justify-self-center">
               <h1 class="contact__title section-title text-white">
                 Grow Your Business with Coble
@@ -492,7 +490,7 @@
             <a
               href="#"
               class="footer__data-logo text-[20px] text-black font-title font-bold"
-              >Coble.</a
+              >IT.Club</a
             >
             <p
               class="footer__data-text text-[15px] text-grey leading-text mt-4"
@@ -553,8 +551,7 @@
         <p
           class="footer__copy pt-8 border-t-2 border-solid border-grey border-opacity-20 text-[15px] text-grey text-center leading-text"
         >
-          &copy; Copyrights 2022, all rights reserved - Develop by Fajar
-          Fadillah A 😎
+          -Student-led IT club by RRM students, Janakpur dham (Nepal)
         </p>
       </div>
     </footer>
@@ -563,7 +560,7 @@
     <!-- ===== SCROLLUP SECTION ===== -->
     <a
       href="#"
-      class="scrollup fixed right-6 -bottom-full w-11 h-11 inline-flex justify-center items-center p-4 bg-[#155aff] rounded-lg text-[1.5rem] text-white transition-all duration-400 z-10 hover:bg-black"
+      class="scrollup fixed right-6 -bottom-full w-11 h-11 inline-flex justify-center items-center p-4 bg-coral rounded-lg text-[1.5rem] text-white transition-all duration-400 z-10 hover:bg-black"
       id="scroll-up"
     >
       <i class="bx bx-up-arrow-alt"></i>
